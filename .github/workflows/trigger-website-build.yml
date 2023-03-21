@@ -17,7 +17,7 @@ jobs:
           event-type: update-dev
           repository: pixijs/beta.pixijs.com
           token: ${{ secrets.PAT }}
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+          client-payload: '{"sha": "${{ github.event.pull_request.head.sha }}"}'
 
 
 
