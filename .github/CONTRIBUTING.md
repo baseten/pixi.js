@@ -1,7 +1,5 @@
 # How to contribute
 
-Edit for testing
-
 It is essential to the development of PixiJS that the community is empowered
 to make changes and get them into the library. Here are some guidelines to make
 that process silky smooth for all involved.
