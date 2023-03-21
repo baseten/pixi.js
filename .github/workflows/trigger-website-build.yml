@@ -3,8 +3,8 @@ name: Trigger Website Build
 on:
   pull_request:
     branches:
-      - deploy
-    types: [closed]
+      - master
+    types: [ closed ]
 
 jobs:
   trigger-website-build:
