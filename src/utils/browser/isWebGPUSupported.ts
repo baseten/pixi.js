@@ -33,8 +33,10 @@ export async function isWebGPUSupported(options: GPURequestAdapterOptions = {}):
         {
             const adapter = await gpu.requestAdapter(options) as GPUAdapter;
 
-            // TODO and one of these!
-            await adapter.requestDevice();
+            // The device is only requested to prove one can be created, so release it straight away.
+            const device = await adapter.requestDevice();
+
+            device.destroy();
 
             return true;
         }
